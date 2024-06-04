@@ -1,0 +1,55 @@
+.btn, .btn-outline,
+input[type=submit].btn,
+input[type=submit].btn-outline {
+    // box-sizing: content-box;
+    display: inline-flex;
+    min-width: remy(237);
+    height: remy(68);
+    justify-content: center;
+    align-items: center;
+
+    border-radius: remy(40);
+    background-color: $premium-pink;
+
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: remy(68);
+    letter-spacing: remy(0.75);
+    text-align: center;
+    color: #f7f7fc;
+
+    white-space: nowrap;
+
+    transition: all 0.2s linear;
+}
+
+.btn:hover {
+    // background-color: var(--pink-hover);
+    background-color: darken($premium-pink, 10%);
+    // color: lighten($color: #000000, $amount: 0);
+}
+
+.btn:focus {
+    background-color: $premium-pink;
+    outline: 8px solid $pink-subtle;
+}
+
+.btn-outline,
+input[type=submit].btn-outline {
+    min-width: remy(200);
+    color: $premium-pink;
+    background-color: $page-bg;
+    border: remy(2) solid $premium-pink;
+}
+
+.btn-outline:hover {
+    color: darken($premium-pink, 10%);
+    border-color: darken($premium-pink, 10%);
+}
+
+.btn-outline:focus {
+    color: $premium-pink;
+    border: remy(2) solid $premium-pink;
+    outline: remy(8) solid $pink-subtle;
+}

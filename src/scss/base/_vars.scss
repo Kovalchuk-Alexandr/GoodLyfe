@@ -1,0 +1,42 @@
+:root {
+	--container-width : 1440px;
+	--container-padding: 120px;
+
+	--font-main: 'CircularStd', sans-serif;
+	--font-accent: 'Inter', sans-serif;
+	--font-titles: var(--font-main);
+
+	--page-bg: #fff;
+	--text-color: #181818;
+	--text-white:  #fff;
+	--text-muted: #909090;
+
+	--accent: #35aff4;
+	--link-color: #2578c8;
+
+	/* Project vars */
+	--premium-pink: #e43071;
+	--grey-copy: #424242;
+	--pink-subtle: #ffdae7;
+	--pink-hover: #be285e;
+	--dark-disabled: #d37899;
+	--light-grey: #f2f3f8;
+
+	--font-family: "Poppins", sans-serif;
+	--second-family: "Manrope", sans-serif;
+	--third-family: "Times New Roman", sans-serif;
+	--font3: "Open Sans", sans-serif;
+}
+
+	$page-bg: #fff;
+	$premium-pink: #e43071;
+	$grey-copy: #424242;
+	$pink-subtle: #ffdae7;
+	$pink-hover: #be285e;
+	$dark-disabled: #d37899;
+	$light-grey: #f2f3f8;
+
+.dark {
+    --page-bg: #252526;
+    --text-color: #fff;
+}
