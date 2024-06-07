@@ -190,19 +190,25 @@ const svgSymbol = {
 };
 
 gulp.task('svgStack:docs', function () {
-	return gulp
-		.src('./src/img/svgicons/**/*.svg')
-		.pipe(plumber(plumberNotify('SVG:dev')))
-		.pipe(svgsprite(svgStack))
-		.pipe(gulp.dest('./docs/img/svgsprite/'));
+	return (
+        gulp
+            // .src('./src/img/svgicons/**/*.svg')
+            .src("./src/img/svgicons/*.svg")
+            .pipe(plumber(plumberNotify("SVG:dev")))
+            .pipe(svgsprite(svgStack))
+            .pipe(gulp.dest("./docs/img/svgsprite/"))
+    );
 });
 
 gulp.task('svgSymbol:docs', function () {
-	return gulp
-		.src('./src/img/svgicons/**/*.svg')
-		.pipe(plumber(plumberNotify('SVG:dev')))
-		.pipe(svgsprite(svgSymbol))
-		.pipe(gulp.dest('./docs/img/svgsprite/'));
+	return (
+        gulp
+            // .src('./src/img/svgicons/**/*.svg')
+            .src("./src/img/svgicons/*.svg")
+            .pipe(plumber(plumberNotify("SVG:dev")))
+            .pipe(svgsprite(svgSymbol))
+            .pipe(gulp.dest("./docs/img/svgsprite/"))
+    );
 });
 
 gulp.task('files:docs', function () {

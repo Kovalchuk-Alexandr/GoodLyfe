@@ -1,0 +1,22 @@
+.header-menu {
+	margin: 0 remy(73) 0 auto;
+	gap: remy(70);
+}
+
+.header-menu__link {
+	padding: remy(3);
+
+	font-family: var(--font-family);
+	font-size: 1rem;
+	line-height: 1.1;
+	text-align: center;
+	color: var(--text-white);
+
+	white-space: nowrap;
+
+    transition: opacity 0.2s ease-in;
+    
+    &:hover {
+        opacity: 0.85;
+    }
+}

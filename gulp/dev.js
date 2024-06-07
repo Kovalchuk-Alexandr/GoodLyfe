@@ -175,7 +175,8 @@ const svgSymbol = {
 
 gulp.task('svgStack:dev', function () {
 	return gulp
-		.src('./src/img/svgicons/**/*.svg')
+		// .src('./src/img/svgicons/**/*.svg')
+		.src('./src/img/svgicons/*.svg')
 		.pipe(plumber(plumberNotify('SVG:dev')))
 		.pipe(svgsprite(svgStack))
 		.pipe(gulp.dest('./build/img/svgsprite/'))
@@ -183,7 +184,8 @@ gulp.task('svgStack:dev', function () {
 
 gulp.task('svgSymbol:dev', function () {
 	return gulp
-		.src('./src/img/svgicons/**/*.svg')
+		// .src('./src/img/svgicons/**/*.svg')
+		.src('./src/img/svgicons/*.svg')
 		.pipe(plumber(plumberNotify('SVG:dev')))
 		.pipe(svgsprite(svgSymbol))
 		.pipe(gulp.dest('./build/img/svgsprite/'));

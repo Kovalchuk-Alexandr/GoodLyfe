@@ -11,15 +11,35 @@
 	height: 62px;
 }
 
+.icon--search {
+	// fill: var(--page-bg);
+	// stroke: var(--page-bg);
+	width: remy(20);
+	height: remy(20);
+
+	&:hover {
+		// stroke: $pink-hover;
+		cursor: pointer;
+	}
+}
+
+#search {
+	& rect {
+		fill: var(--page-bg);
+	}
+
+	& circle {
+		stroke: var(--page-bg);
+	}
+
+}
+
 .icon--heart-line {
 	fill: rgb(241, 68, 131);
 }
 
 .icon--id-card-line {
 	fill: rgb(51, 51, 51);
-}
-.icon--search-line {
-	fill: rgb(28, 176, 80);
 }
 
 .icon--user-star {

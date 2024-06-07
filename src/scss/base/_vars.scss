@@ -11,14 +11,16 @@
 	--text-white:  #fff;
 	--text-muted: #909090;
 
+	--primary: var(--premium-pink);
+	--primary-hover: var(--pink-hover);
 	--accent: #35aff4;
 	--link-color: #2578c8;
 
 	/* Project vars */
 	--premium-pink: #e43071;
+	--pink-hover: #be285e;
 	--grey-copy: #424242;
 	--pink-subtle: #ffdae7;
-	--pink-hover: #be285e;
 	--dark-disabled: #d37899;
 	--light-grey: #f2f3f8;
 
@@ -36,7 +38,11 @@
 	$dark-disabled: #d37899;
 	$light-grey: #f2f3f8;
 
-.dark {
-    --page-bg: #252526;
-    --text-color: #fff;
+.green {
+	--primary: #26d68a;
+	--primary-hover: #1da067;
+	--accent: #35aff4;
+	--link-color: #2578c8;
+    // --page-bg: #252526;
+    // --text-color: #fff;
 }

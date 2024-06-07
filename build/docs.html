@@ -13,37 +13,45 @@
 
 	<body>
 		<header class="header">
-			<div class="container">
-				<div class="header__row">
-					<div class="logo">ВебКадеми</div>
-					<nav class="header__nav nav">
-						<ul class="nav__list">
-							<li><a href="index.html" class="active">Главная</a></li>
-							<li><a href="docs.html">Документация</a></li>
-						</ul>
+			<div class="header-nav">
+				<div class="header-container d-flex">
+					<a href="#!" class="nav__logo">
+						<img src="./img/header/logo.svg" alt="Logo" class="nav__logo-img" />
+					</a>
+
+					<nav class="header-menu d-flex">
+						<a href="#!" class="header-menu__link">Classess</a>
+						<a href="#!" class="header-menu__link">Timetable</a>
+						<a href="#!" class="header-menu__link">Clubs</a>
+						<a href="#!" class="header-menu__link">Nutrition</a>
+						<a href="#!" class="header-menu__link">Free Trial</a>
 					</nav>
 
-					<button class="btn">Button</button>
-					<button class="btn-outline">Button</button>
+					<div class="header-nav__btn d-flex">
+						<button class="search-open">
+							<span>Search</span>
 
-					<a href="#!" class="btn">Anchor</a>
-					<a href="#!" class="btn-outline">Anchor</a>
+							<img src="./img/header/search.svg" alt="Search" class="icon icon--search" />
+							<!-- <svg class="icon icon--search">
+                        <use href="./img/svgsprite/sprite.symbol.svg#search"></use>
+                    </svg> -->
+						</button>
 
-					<input type="submit" class="btn" value="Input" />
-					<input type="submit" class="btn-outline" value="Input" />
+						<!-- <button class="btn">Button</button> -->
+						<button class="btn-outline btn-outline--small">Login</button>
 
-					<button class="mobile-nav-btn">
-						<div class="nav-icon"></div>
-					</button>
+						<button class="mobile-nav-btn none">
+							<div class="nav-icon"></div>
+						</button>
+					</div>
 				</div>
 			</div>
+
+			<div class="header-search-wrapper"></div>
+
+			<!-- -----------  Slider  ---------------------- -->
+			<div class="header-slider"></div>
 		</header>
-		<div class="mobile-nav">
-			<ul class="mobile-nav__list">
-				<li><a href="index.html">Главная</a></li>
-				<li><a href="docs.html">Документация</a></li>
-			</ul>
-		</div>
 
 		<main class="docs">
 			<section>

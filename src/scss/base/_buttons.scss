@@ -9,7 +9,7 @@ input[type=submit].btn-outline {
     align-items: center;
 
     border-radius: remy(40);
-    background-color: $premium-pink;
+    background-color: var(--primary);
 
     font-family: var(--font-family);
     font-weight: 600;
@@ -25,31 +25,59 @@ input[type=submit].btn-outline {
 }
 
 .btn:hover {
-    // background-color: var(--pink-hover);
-    background-color: darken($premium-pink, 10%);
+    background-color: var(--primary-hover);
+    // background-color: darken($premium-pink, 10%);
     // color: lighten($color: #000000, $amount: 0);
 }
 
 .btn:focus {
-    background-color: $premium-pink;
+    background-color: var(--primary);
     outline: 8px solid $pink-subtle;
 }
 
 .btn-outline,
 input[type=submit].btn-outline {
     min-width: remy(200);
-    color: $premium-pink;
+    color: var(--primary);
     background-color: $page-bg;
-    border: remy(2) solid $premium-pink;
+    border: remy(2) solid var(--primary);
+
+    &--small {
+        height: remy(50);
+        width: remy(166);
+        min-width: unset;
+        font-weight: 400;
+    }
 }
 
 .btn-outline:hover {
-    color: darken($premium-pink, 10%);
-    border-color: darken($premium-pink, 10%);
+    // color: darken($premium-pink, 10%);
+    // border-color: darken($premium-pink, 10%);
+    color: var(--primary-hover);
+    border-color: var(--primary-hover);
 }
 
 .btn-outline:focus {
     color: $premium-pink;
     border: remy(2) solid $premium-pink;
     outline: remy(8) solid $pink-subtle;
+}
+
+.btn-outline.btn-outline--small:focus {
+    outline: remy(4) solid $pink-subtle;
+}
+
+.search-open {
+    height: remy(50);
+    display: flex;
+    align-items: center;
+    gap: remy(6);
+
+    color: white;
+
+    transition: opacity 0.2s ease-in;
+    
+    &:hover {
+        opacity: 0.85;
+    }
 }
