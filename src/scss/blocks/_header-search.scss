@@ -1,8 +1,23 @@
 .header-search-wrapper {
     position: absolute;
-    top: 101px;
+    top: -100px;
     left: 0;
     right: 0;
     height: 100px;
-    background-color: var(--accent);
+
+    opacity: 0;
+
+    padding-block: remy(30);
+    padding-inline: remy(41) remy(36);
+
+    background-color: var(--page-bg);
+
+    box-shadow: 0 6px 8px rgba(0, 0, 0, .15);
+
+    transition: all 0.3s ease-in;
+    
+    &.search-form--open {
+        top: 101px;
+        opacity: 1;
+    }
 }

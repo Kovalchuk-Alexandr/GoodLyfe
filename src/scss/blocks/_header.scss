@@ -6,26 +6,13 @@
 }
 
 .header-nav {
+	position: relative;
+	z-index: 9;
 	margin: 0 auto;
 	width: 100%;
 	// max-width: remy(1470);
 	padding: remy(26) remy(41) remy(26) remy(36);
 	background-color: var(--primary);
-}
-
-.header-container {
-	width: 100%;
-	max-width: remy(1470);
-	min-width: remy(1390);
-	padding-inline: remy(15);
-	margin: 0 auto;
-	// justify-content: space-between;
-	
-	font-weight: 400;
-	font-size: 1rem;
-	line-height: 1.1;
-	text-align: center;
-	color: #fff;
 }
 
 .header-nav__btn {
@@ -36,6 +23,7 @@
 
 .nav__logo {
 	flex-shrink: 0;
+	margin-right: 15px;
 }
 .nav__logo-img {
 }

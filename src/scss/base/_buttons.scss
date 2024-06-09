@@ -7,6 +7,7 @@ input[type=submit].btn-outline {
     height: remy(68);
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
 
     border-radius: remy(40);
     background-color: var(--primary);
@@ -78,6 +79,6 @@ input[type=submit].btn-outline {
     transition: opacity 0.2s ease-in;
     
     &:hover {
-        opacity: 0.85;
+        opacity: 0.8;
     }
 }

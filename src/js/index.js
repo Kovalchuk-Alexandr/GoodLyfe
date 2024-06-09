@@ -1,11 +1,15 @@
-// Галерея и лайтбоксы от Fancybox
-import { Fancybox } from '@fancyapps/ui';
-import '@fancyapps/ui/dist/fancybox/fancybox.css';
+import mobileNav from "./modules/mobile-nav.js";
 
-Fancybox.bind('[data-fancybox]', {
-	// Your custom options
+document.addEventListener("DOMContentLoaded", function() {
+    /* =====  Отобразивть форму поиска по клику на лупу в шапке  ====== */
+    const headerSearchOpen = document.querySelector("#search-open");
+    const headerSearchForm = document.querySelector("#header-search-form");
+
+    headerSearchOpen.addEventListener("click", function() {
+        headerSearchForm.classList.toggle("search-form--open");
+    });
+
+
+    // Мобильная навигация
+    mobileNav();
 });
-
-// Мобильная навигация
-import mobileNav from './modules/mobile-nav.js';
-mobileNav();

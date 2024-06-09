@@ -1,8 +1,16 @@
-/* Демо контент */
-.content-demo {
-	margin-bottom: 5rem;
-	padding: 1rem;
-	background-color: #dadada;
+/* Контейнеры проекта */
+.header-container {
+	margin: 0 auto;
+	padding-inline: remy(15);
+	
+	width: 100%;
+	max-width: remy(1390);
+	
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.1;
+	text-align: center;
+	// color: #fff;
 }
 
 /* Контейнеры */

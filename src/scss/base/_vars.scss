@@ -1,6 +1,6 @@
 :root {
-	--container-width : 1440px;
-	--container-padding: 120px;
+	--container-width : 1390px;
+	--container-padding: 15px;
 
 	--font-main: 'CircularStd', sans-serif;
 	--font-accent: 'Inter', sans-serif;
@@ -14,6 +14,7 @@
 	--primary: var(--premium-pink);
 	--primary-hover: var(--pink-hover);
 	--accent: #35aff4;
+	--black: #252525;
 	--link-color: #2578c8;
 
 	/* Project vars */
@@ -32,11 +33,13 @@
 
 	$page-bg: #fff;
 	$premium-pink: #e43071;
+	$pink-hover: #be285e;
 	$grey-copy: #424242;
 	$pink-subtle: #ffdae7;
-	$pink-hover: #be285e;
 	$dark-disabled: #d37899;
 	$light-grey: #f2f3f8;
+
+	$sec3: #D2D2D2;
 
 .green {
 	--primary: #26d68a;
