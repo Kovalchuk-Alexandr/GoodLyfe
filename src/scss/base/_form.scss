@@ -6,6 +6,10 @@
         // flex-grow: 1;
         position: relative;
         padding-inline: remy(33);
+
+        @include mobileM {
+            padding-inline: remy(23);
+        }
     
         .form-input {
             display: block;

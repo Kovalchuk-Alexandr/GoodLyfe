@@ -1,15 +1,43 @@
 import mobileNav from "./modules/mobile-nav.js";
+ // Мобильная навигация
+// mobileNav();
 
 document.addEventListener("DOMContentLoaded", function() {
     /* =====  Отобразивть форму поиска по клику на лупу в шапке  ====== */
     const headerSearchOpen = document.querySelector("#search-open");
     const headerSearchForm = document.querySelector("#header-search-form");
 
+    const navBtn = document.querySelector(".mobile-nav-btn");
+    const nav = document.querySelector(".mobile-nav");
+    const menuIcon = document.querySelector(".nav-icon");
+
+    const fade = document.querySelector(".mobile-nav-fade");
+
+    navBtn.onclick = toggleMobile;
+
     headerSearchOpen.addEventListener("click", function() {
-        headerSearchForm.classList.toggle("search-form--open");
+        if (nav.classList.contains("mobile-nav--open")) {
+            toggleMobile();
+        }
+
+        if (!headerSearchForm.classList.contains("search-form--open")) {
+            headerSearchForm.classList.add("search-form--open");
+        } else {
+            headerSearchForm.classList.remove("search-form--open");
+        }
     });
 
+    fade.onclick = toggleMobile;
 
-    // Мобильная навигация
-    mobileNav();
+    function toggleMobile() {
+        // Проверяем, если открыто меню поиска, закрываем
+        if (headerSearchForm.classList.contains("search-form--open")) {
+            headerSearchForm.classList.remove("search-form--open");
+        }
+        nav.classList.toggle("mobile-nav--open");
+        menuIcon.classList.toggle("nav-icon--active");
+        document.body.classList.toggle("no-scroll");
+        fade.classList.toggle("mobile-nav-fade--open");
+    }
+   
 });

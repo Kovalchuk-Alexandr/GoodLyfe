@@ -5,9 +5,10 @@
     right: 0;
     height: 100px;
 
+    z-index: -20;
     opacity: 0;
 
-    padding-block: remy(30);
+    padding-block: remy(24);
     padding-inline: remy(41) remy(36);
 
     background-color: var(--page-bg);
@@ -17,7 +18,20 @@
     transition: all 0.3s ease-in;
     
     &.search-form--open {
-        top: 101px;
+        padding-block: unset;
+        top: 82px;
+
+        display: flex;
+        align-items: center;
+
+        z-index: 9;
         opacity: 1;
+
+        @include tablet {
+            padding-block: remy(16);
+            padding-inline: remy(9) ;
+            // top: 90px;
+            height: unset;
+        }
     }
 }

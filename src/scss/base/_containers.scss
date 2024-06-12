@@ -11,6 +11,14 @@
 	line-height: 1.1;
 	text-align: center;
 	// color: #fff;
+
+	@include tablet {
+		justify-content: space-between;
+	}
+
+	@include mobileM {
+		padding-inline: remy(8);
+	}
 }
 
 /* Контейнеры */

@@ -5,13 +5,13 @@
 }
 
 @mixin desktop () {
-    @media (max-width: 1440px) {
+    @media (max-width: 1349px) {
 		@content;
 	}
 }
 
 @mixin laptop () {
-    @media (max-width: 1250px) {
+    @media (max-width: 1099px) {
 		@content;
 	}
 }

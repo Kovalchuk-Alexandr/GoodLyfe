@@ -22,7 +22,8 @@
 	}
 }
 
-.search-black {
+.search-black,
+.close-black {
 	// fill: var(--gray-copy);
 	// stroke: var(--page-bg);
 	width: remy(30);
@@ -31,16 +32,15 @@
 	&:hover {
 		cursor: pointer;
 	}
+
+	@include mobileM {
+		width: remy(20);
+		height: remy(20);
+	}
 }
 
 .close-black {
 	fill: var(--gray-copy);
-	width: remy(30);
-	height: remy(30);
-
-	&:hover {
-		cursor: pointer;
-	}
 }
 
 #search {
