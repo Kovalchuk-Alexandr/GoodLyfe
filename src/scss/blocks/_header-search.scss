@@ -12,6 +12,8 @@
     padding-inline: remy(41) remy(36);
 
     background-color: var(--page-bg);
+    -webkit-backdrop-filter: blur(2px);
+	backdrop-filter: blur(2px);
 
     box-shadow: 0 6px 8px rgba(0, 0, 0, .15);
 

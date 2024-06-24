@@ -44,9 +44,36 @@
     @@include('header-search.html')
     
 
-    <!-- -----------  Slider  ---------------------- -->
-    <div class="header-slider">
+    <!-- -----------  Header Slider  ---------------------- -->
+    <div class="header-content">
+        <div class="header-content__svg">
 
+            <picture>
+                <source media="(max-width: 800px)" srcset="./img/header/header-border-320-a.svg" />
+                <!-- <source media="(max-width: 770px)" srcset="./img/header/header-border-770-a.svg" /> -->
+                <source media="(max-width: 1439px)" srcset="./img/header/header-border-1440-a.svg" />
+                <source media="(min-width: 1440px)" srcset="./img/header/header-border-2550.svg" />
+                <img src="./img/header/header-border-2550.svg" alt="Header border" >
+            </picture>
+
+            <!-- <svg class="icon icon--header-border icon--header-border-320">
+                <use href="./img/svgsprite/sprite.symbol.svg#header-border-320"></use>
+            </svg>
+
+            <svg class="icon icon--header-border icon--header-border-770">
+                <use href="./img/svgsprite/sprite.symbol.svg#header-border-770"></use>
+            </svg>
+
+            <svg class="icon icon--header-border icon--header-border-1440">
+                <use href="./img/svgsprite/sprite.symbol.svg#header-border-1440"></use>
+            </svg>
+
+            <svg class="icon icon--header-border icon--header-border-2550">
+                <use href="./img/svgsprite/sprite.symbol.svg#header-border-2550"></use>
+            </svg> -->
+
+        </div>
+        @@include('header-slider.html')
     </div>
 
 </header>

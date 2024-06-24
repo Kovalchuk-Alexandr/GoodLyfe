@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?><svg viewBox="0 0 21 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style>:root>svg{display:none}:root>svg:target{display:block}</style><svg fill="none" viewBox="0 0 21 20" id="search" xmlns="http://www.w3.org/2000/svg">
+<?xml version="1.0" encoding="utf-8"?><svg viewBox="0 0 2000 47.34" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style>:root>svg{display:none}:root>svg:target{display:block}</style><svg viewBox="0 0 1440 35" fill="none" id="header-border-1440" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 14.011s412.629-26.769 720 0C1027.37 40.781 1440 .56 1440 .56v34H0" fill="#fff"/>
+</svg><svg fill="none" viewBox="0 0 2535 60" id="header-border-2550" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 23.74s726.399-47.24 1267.5 0C1808.6 70.98 2535 0 2535 0v60H0" fill="#fff"/>
+</svg><svg fill="none" viewBox="0 0 320 25" id="header-border-320" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 9.892s91.695-19.684 160 0C228.305 29.575 320 0 320 0v25H0" fill="#fff"/>
+</svg><svg fill="none" viewBox="0 0 770 30" id="header-border-770" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 11.87s220.642-23.62 385 0S770 0 770 0v30H0" fill="#fff"/>
+</svg><svg fill="none" viewBox="0 0 320 25" id="header-border-mob" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 9.892s91.695-19.684 160 0C228.305 29.575 320 0 320 0v25H0" fill="#fff"/>
+</svg><svg fill="none" viewBox="0 0 21 20" id="search" xmlns="http://www.w3.org/2000/svg">
     <rect y="17.127" width="8.82" height="3" rx="1.5" transform="rotate(-44 0 17.127)" fill="#fff"/>
     <circle cx="12.259" cy="7.862" r="6.362" stroke="#fff" stroke-width="3"/>
 </svg></svg>

@@ -1,0 +1,107 @@
+:root {
+    --swiper-pagination-bottom: 45px;   
+    --swiper-pagination-bullet-horizontal-gap: 8px;
+
+    @include desktopL {
+        // --swiper-pagination-bottom: 60px; 
+    }
+
+    @include mobileL {
+        --swiper-pagination-bottom: 60px;
+    }
+
+    @include mobileS {
+        --swiper-pagination-bottom: 35px;
+    }
+
+//     --swiper-pagination-bullet-size: 12px;
+//     --swiper-pagination-bullet-inactive-color: var(--page-bg);
+//     --swiper-pagination-bullet-inactive-opacity: .9;
+
+//     --swiper-pagination-color: var(--primary);
+}
+
+
+// .swiper-pagination-bullet-active {
+//     --swiper-pagination-bullet-size: 17px;
+// }
+ 
+.swiper {
+    &-pagination {
+        // bottom: 40px;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        // column-gap: 8px;
+
+        &-bullet {
+            width: 12px;
+            height: 12px;
+            background-color: var(--page-bg);
+            opacity: 0.9;
+            vertical-align: middle;
+        }
+
+        &-bullet-active {
+            width: 17px;
+            height: 17px;
+            background-color: var(--primary);
+        }
+    }
+}
+
+// .swiper-pagination-bullet {
+//     width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 8px));
+//     height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px));
+//     display: inline-block;
+//     border-radius: var(--swiper-pagination-bullet-border-radius, 50%);
+//     background: var(--swiper-pagination-bullet-inactive-color, #000);
+//     opacity: var(--swiper-pagination-bullet-inactive-opacity, .2);
+// }
+
+.header-slider{
+    // --swiper-pagination-bottom: 56px;
+
+    // @include desktop {
+    //     --swiper-pagination-bottom: 40px;   // отступ пагинации
+    // }
+    
+    height: 100%;
+
+    &__item {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    // &__item,
+    &__item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    &__item-bg {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        background: rgba(45, 40, 36, 0.2);
+    }
+}
+
+// .swiper-slide {
+//     background: rgba(45, 40, 36, 0.2);    
+
+//     background-position: center center; /* x y */
+//     background-size: cover;
+//     background-repeat: no-repeat;
+ 
+// }
+
+// .swiper-slide img {
+//     object-fit: cover;
+//     object-position: top;
+// }

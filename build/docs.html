@@ -71,8 +71,101 @@
 				</div>
 			</div>
 
-			<!-- -----------  Slider  ---------------------- -->
-			<div class="header-slider"></div>
+			<!-- -----------  Header Slider  ---------------------- -->
+			<div class="header-content">
+				<div class="header-content__svg">
+					<picture>
+						<source media="(max-width: 800px)" srcset="./img/header/header-border-320-a.svg" />
+						<!-- <source media="(max-width: 770px)" srcset="./img/header/header-border-770-a.svg" /> -->
+						<source media="(max-width: 1439px)" srcset="./img/header/header-border-1440-a.svg" />
+						<source media="(min-width: 1440px)" srcset="./img/header/header-border-2550.svg" />
+						<img src="./img/header/header-border-2550.svg" alt="Header border" />
+					</picture>
+
+					<!-- <svg class="icon icon--header-border icon--header-border-320">
+                <use href="./img/svgsprite/sprite.symbol.svg#header-border-320"></use>
+            </svg>
+
+            <svg class="icon icon--header-border icon--header-border-770">
+                <use href="./img/svgsprite/sprite.symbol.svg#header-border-770"></use>
+            </svg>
+
+            <svg class="icon icon--header-border icon--header-border-1440">
+                <use href="./img/svgsprite/sprite.symbol.svg#header-border-1440"></use>
+            </svg>
+
+            <svg class="icon icon--header-border icon--header-border-2550">
+                <use href="./img/svgsprite/sprite.symbol.svg#header-border-2550"></use>
+            </svg> -->
+				</div>
+				<!-- Slider main container -->
+				<div class="swiper header-slider">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper">
+						<!-- Slides -->
+						<div class="swiper-slide">
+							<div class="header-slider__item">
+								<picture>
+									<source media="(max-width: 400px)" srcset="./img/header/header-slide1-mob-s1.webp" />
+									<source media="(max-width: 549px)" srcset="./img/header/header-slide1-mob.webp" />
+									<source media="(min-width: 550px)" srcset="./img/header/header-slide1.webp" />
+									<img src="./img/header/header-slide1.webp" alt="Header Slide" loading="lazy" />
+								</picture>
+
+								<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+								<!-- fade для картинки -->
+								<div class="header-slider__item-bg"></div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="header-slider__item">
+								<picture>
+									<source srcset="./img/header/header-slide2.webp 1x, ./img/header/header-slide2@2x.webp 2x" type="image/webp" />
+									<img src="./img/header/header-slide2.webp" alt="Header Slide" loading="lazy" />
+								</picture>
+								<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+								<!-- fade для картинки -->
+								<div class="header-slider__item-bg"></div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="header-slider__item">
+								<picture>
+									<source media="(max-width: 400px)" srcset="./img/header/header-slide3-mob-s.webp" />
+									<source media="(max-width: 549px)" srcset="./img/header/header-slide3-mob.webp" />
+									<source media="(min-width: 550px)" srcset="./img/header/header-slide3.webp" />
+									<img src="./img/header/header-slide3.webp" alt="Header Slide" loading="lazy" />
+								</picture>
+								<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+								<!-- fade для картинки -->
+								<div class="header-slider__item-bg"></div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="header-slider__item">
+								<picture>
+									<source media="(max-width: 400px)" srcset="./img/header/header-slide4-mob-s.webp" />
+									<source media="(max-width: 549px)" srcset="./img/header/header-slide4-mob.webp" />
+									<source media="(min-width: 550px)" srcset="./img/header/header-slide4.webp" />
+									<img src="./img/header/header-slide4.webp" alt="Header Slide" loading="lazy" />
+								</picture>
+								<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+								<!-- fade для картинки -->
+								<div class="header-slider__item-bg"></div>
+							</div>
+						</div>
+					</div>
+					<!-- If we need pagination -->
+					<div class="swiper-pagination"></div>
+
+					<!-- If we need navigation buttons -->
+					<!-- <div class="swiper-button-prev"></div> -->
+					<!-- <div class="swiper-button-next"></div> -->
+
+					<!-- If we need scrollbar -->
+					<div class="swiper-scrollbar"></div>
+				</div>
+			</div>
 		</header>
 
 		<main class="docs">

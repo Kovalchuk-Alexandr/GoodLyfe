@@ -7,8 +7,8 @@
 .icon {
 	fill: transparent;
 	stroke: transparent;
-	width: 62px;
-	height: 62px;
+	// width: 62px;
+	// height: 62px;
 }
 
 .icon--search {
@@ -54,23 +54,54 @@
 
 }
 
-.icon--heart-line {
-	fill: rgb(241, 68, 131);
-}
+.icon--header-border {
+	// display: block;
+	fill: var(--page-bg);
+	width: 100%;
+	height: 100%;
 
-.icon--id-card-line {
-	fill: rgb(51, 51, 51);
-}
+	// @debug "VW - " width;
+	// @debug "calc(100vw / 1440: " (calc(100vw / 1440));
 
-.icon--user-star {
-	fill: rgb(26, 134, 235);
-}
+	// @if 100vh > 1440 {
+	// 	@warn "Inside";
+	// 	transform: scale(calc(100vh / 1440));
+	// }
 
-.icon--user {
-	stroke: rgb(26, 134, 235);
-	transition: all 0.2s ease-in;
+	&-2550 {display: block;}
+	&-1440 {display: none;}
+	&-770 {display: none;}
+	&-320 {display: none;}
 
-	&:hover {
-		stroke: rgb(17, 193, 90);
+	// &-mob {
+	// 	display: none;
+	// 	fill: var(--page-bg);
+	// 	width: 700px;
+	// 	height: 100%;
+
+	// }
+
+	@include desktop {
+		&-2550 {display: none;}
+		&-1440 {display: block;}
+		&-770 {display: none;}
+		&-320 {display: none;}
 	}
+
+	@include mobileL {
+		&-2550 {display: none;}
+		&-1440 {display: none;}
+		&-770 {display: block;}
+		&-320 {display: none;}
+	}
+
+	// @include mobileM {
+	// 	&-2550 {display: none;}
+	// 	&-1440 {display: none;}
+	// 	&-770 {display: none;}
+	// 	&-320 {display: block;}
+	// }
+
+	
+
 }

@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 21 20" id="search" xmlns="http://www.w3.org/2000/svg">
+<?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 1440 35" id="header-border-1440" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 14.0112C0 14.0112 412.629 -12.7579 720 14.0112C1027.37 40.7803 1440 0.558594 1440 0.558594V34.5586H0"/>
+</symbol><symbol viewBox="0 0 2535 60" id="header-border-2550" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 23.7399C0 23.7399 726.399 -23.4997 1267.5 23.7399C1808.6 70.9795 2535 0 2535 0V60H0"/>
+</symbol><symbol viewBox="0 0 320 25" id="header-border-320" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 9.89162C0 9.89162 91.6953 -9.79156 160 9.89162C228.305 29.5748 320 0 320 0V25H0"/>
+</symbol><symbol viewBox="0 0 770 30" id="header-border-770" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 11.8699C0 11.8699 220.642 -11.7499 385 11.8699C549.358 35.4898 770 0 770 0V30H0"/>
+</symbol><symbol viewBox="0 0 320 25" id="header-border-mob" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 9.89162C0 9.89162 91.6953 -9.79156 160 9.89162C228.305 29.5748 320 0 320 0V25H0"/>
+</symbol><symbol viewBox="0 0 21 20" id="search" xmlns="http://www.w3.org/2000/svg">
     <rect y="17.1267" width="8.81988" height="3" rx="1.5" transform="rotate(-44 0 17.1267)"/>
     <circle cx="12.2593" cy="7.86161" r="6.36161" stroke-width="3"/>
 </symbol></svg>
