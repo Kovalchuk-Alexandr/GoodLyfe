@@ -1,9 +1,9 @@
 :root {
-    --swiper-pagination-bottom: 45px;   
+    --swiper-pagination-bottom: 60px;   
     --swiper-pagination-bullet-horizontal-gap: 8px;
 
     @include desktopL {
-        // --swiper-pagination-bottom: 60px; 
+        --swiper-pagination-bottom: 50px; 
     }
 
     @include mobileL {
@@ -50,15 +50,6 @@
     }
 }
 
-// .swiper-pagination-bullet {
-//     width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 8px));
-//     height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px));
-//     display: inline-block;
-//     border-radius: var(--swiper-pagination-bullet-border-radius, 50%);
-//     background: var(--swiper-pagination-bullet-inactive-color, #000);
-//     opacity: var(--swiper-pagination-bullet-inactive-opacity, .2);
-// }
-
 .header-slider{
     // --swiper-pagination-bottom: 56px;
 
@@ -91,17 +82,3 @@
         background: rgba(45, 40, 36, 0.2);
     }
 }
-
-// .swiper-slide {
-//     background: rgba(45, 40, 36, 0.2);    
-
-//     background-position: center center; /* x y */
-//     background-size: cover;
-//     background-repeat: no-repeat;
- 
-// }
-
-// .swiper-slide img {
-//     object-fit: cover;
-//     object-position: top;
-// }

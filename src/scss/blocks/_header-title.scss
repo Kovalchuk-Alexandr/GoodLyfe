@@ -1,0 +1,31 @@
+.header-content__title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 2;
+
+    text-align: center;
+    color: var(--text-white);
+
+    .h1 {
+        width: 14ch;
+        margin-bottom: remy(22);
+    }
+ 
+    .btn {
+        font-family: var(--font3);}
+
+    @include mobile {
+        top: 43%;
+
+        .btn {
+            min-width: unset;
+            width: 208px;
+        }
+    }
+    
+}
+
+

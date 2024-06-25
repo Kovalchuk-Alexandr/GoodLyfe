@@ -1,7 +1,6 @@
 .btn, .btn-outline,
 input[type=submit].btn,
 input[type=submit].btn-outline {
-    // box-sizing: content-box;
     display: inline-flex;
     min-width: remy(237);
     height: remy(68);
@@ -16,13 +15,18 @@ input[type=submit].btn-outline {
     font-weight: 600;
     font-size: 1rem;
     line-height: remy(68);
-    letter-spacing: remy(0.75);
+    // letter-spacing: remy(0.75);
     text-align: center;
     color: #f7f7fc;
 
     white-space: nowrap;
 
     transition: all 0.2s linear;
+
+    @include mobile {
+        height: remy(56);
+        line-height: remy(56);
+    }
 }
 
 .btn:hover {
@@ -42,6 +46,11 @@ input[type=submit].btn-outline {
     color: var(--primary);
     background-color: $page-bg;
     border: remy(2) solid var(--primary);
+
+    @include mobile {
+        height: remy(60);
+        line-height: remy(56);
+    }
 
     &--small {
         height: remy(50);

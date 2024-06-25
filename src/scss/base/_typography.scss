@@ -5,7 +5,7 @@
 	// font-size: 70px;
     font-size: remy(70);
 	line-height: 110%;
-	color: #000;
+	color: inherit;
 }
 
 .title-2, .h2 {
@@ -66,4 +66,15 @@
     font-size: remy(16);
 	line-height: 231%;
 	color: var(--grey-copy);
+}
+
+@include tablet {
+	.h1 {
+		font-size: remy(56);
+		line-height: 1.12;
+	}
+}
+
+@include mobile {
+	.h1 {font-size: remy(32);}
 }

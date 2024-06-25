@@ -7,6 +7,9 @@
         position: relative;
         padding-inline: remy(33);
 
+        border: 1px solid $sec3;
+        border-radius: 7px;
+
         @include mobileM {
             padding-inline: remy(23);
         }
@@ -18,7 +21,7 @@
 
             padding-inline: remy(10);
             
-            border: 1px solid $sec3;
+            // border: 1px solid $sec3;
             border-radius: remy(5);
 
             color: var(--gray-copy);
@@ -33,17 +36,21 @@
 
         .search-btn,
         .reset-btn {
+            width: remy(30);
+            height: remy(30);
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
+
+            & > * {vertical-align: middle;}
         }
 
         .search-btn {
-            left: 0;
+            left: 4px;
         }
 
         .reset-btn {
-            right: 0;
+            right: 4px;
         }
     }
 
