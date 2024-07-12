@@ -24,21 +24,21 @@
 /* Контейнеры */
 .container {
 	margin: 0 auto;
-	padding: 0 var(--container-padding);
+	padding-inline: var(--container-padding);
 
 	max-width: var(--container-width);
 	width: 100%;
 
 	@include desktop {
-		padding: 0 50px;
+		padding-inline: 50px;
 	}
 
 	@include tablet {
-		padding: 0 30px;
+		padding-inline: 30px;
 	}
 
 	@include mobile {
-		padding: 0 15px;
+		padding-inline: 16px;
 	}
 }
 

@@ -24,9 +24,10 @@
 }
 
 .title-4, .h4 {
-	margin: 1em 0 0.5em;
+	// margin: 1em 0 0.5em;
 	// font-size: 40px;
     font-size: remy(40);
+	line-height: 1.2;
 }
 
 .title-5, .h5 {
@@ -55,7 +56,8 @@
 	}
 
 	@include mobile {
-		font-size: 14px;
+		font-size: 16px;
+		line-height: 200%;
 	}
 }
 
@@ -68,6 +70,10 @@
 	color: var(--grey-copy);
 }
 
+.text-accent {
+	color: var(--primary);
+}
+
 @include tablet {
 	.h1 {
 		font-size: remy(56);
@@ -77,4 +83,5 @@
 
 @include mobile {
 	.h1 {font-size: remy(32);}
+	.h4 {line-height: 1.2;}
 }
