@@ -3,7 +3,13 @@
         <div class="result-content">
             <div class="result__img">
                 <div class="result__img-top">
-                    <img src="./img/result/pict1.jpg" width="347"  height="399" alt="Male lifting weights">
+                    <picture>
+                        <source media='(max-width: 767px)' srcset='./img/result/pict1m.jpg' />
+                        <source media='(min-width: 768px)' srcset='./img/result/pict1.jpg' />
+                        <img src='./img/result/pict1.jpg' width="347"  height="399" alt="Male lifting weights" />
+                    </picture>
+                    
+                    <!-- <img src="./img/result/pict1.jpg" width="347"  height="399" alt="Male lifting weights"> -->
                 </div>
                 
                 <div class="result__img-bottom">
