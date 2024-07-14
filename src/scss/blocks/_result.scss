@@ -22,27 +22,24 @@
     width: 450px;
     // height: 503px;
     aspect-ratio: 9 / 10;
-    display: flex;
+
+    position: relative;
 
     &-top, &-bottom {
-        // object-fit: cover;
-        // object-position: center;
+        object-fit: cover;
+        object-position: center;
     }
 
     &-top img, &-bottom img {
-        // width: 100%;
-        height: revert-layer;
-
-        @include mobileM {
-            height: auto;
-        }
+        width: 100%;
+        height: 100%;
     }
 
     &-top {
         width: 347px;
         aspect-ratio: 7 / 8;
-
         @include mobileM {
+            
             width: 80%;
             // width: 280px;
             // height: 248px;
@@ -55,24 +52,24 @@
     }
 
     &-bottom {
+        position: absolute;
+        right: 0px;
+        bottom: 0;
         width: 241px;
         // aspect-ratio: 2 / 3;
         aspect-ratio: 241 / 359;
-        padding-top: 144px;
-        margin-left: -148px;
         @include mobileM {
-            width: 60%;
+            width: 50%;
             // width: 192.8px;
         }   
         @include mobileS {
             width: 146px;
             height: 218px;
-            padding-top: 95px;
-            margin-left: -60px;
         }   
     }
 
     @include mobileM {
+        // align-self: start;
         width: 80%;
         // width: 360px;
         // height: 313px  ;
@@ -84,6 +81,9 @@
 }
 
 .result__desc {
+    // margin-top: 103px;
+    // vertical-align: middle;
+    // flex-grow: 1;
     display: flex;
     flex-direction: column;
     margin-top: remy(108);
@@ -97,6 +97,8 @@
     @include mobile {
         margin-top: unset;
     }
+
+
 }
 
 .result__title {
@@ -121,6 +123,7 @@
     width: remy(237);
 
     @include mobile {
+        
         margin: 0 auto;
         border: 2px solid var(--premium-pink);
         border-radius: remy(38);
