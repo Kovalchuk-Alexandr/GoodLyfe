@@ -31,14 +31,18 @@
 
     &-top img, &-bottom img {
         // width: 100%;
-        // height: 100%;
+        height: revert-layer;
+
+        @include mobileM {
+            height: auto;
+        }
     }
 
     &-top {
         width: 347px;
         aspect-ratio: 7 / 8;
+
         @include mobileM {
-            
             width: 80%;
             // width: 280px;
             // height: 248px;
@@ -57,12 +61,14 @@
         padding-top: 144px;
         margin-left: -148px;
         @include mobileM {
-            width: 50%;
+            width: 60%;
             // width: 192.8px;
         }   
         @include mobileS {
             width: 146px;
             height: 218px;
+            padding-top: 95px;
+            margin-left: -60px;
         }   
     }
 
@@ -78,9 +84,6 @@
 }
 
 .result__desc {
-    // margin-top: 103px;
-    // vertical-align: middle;
-    // flex-grow: 1;
     display: flex;
     flex-direction: column;
     margin-top: remy(108);
@@ -94,8 +97,6 @@
     @include mobile {
         margin-top: unset;
     }
-
-
 }
 
 .result__title {
@@ -120,7 +121,6 @@
     width: remy(237);
 
     @include mobile {
-        
         margin: 0 auto;
         border: 2px solid var(--premium-pink);
         border-radius: remy(38);
