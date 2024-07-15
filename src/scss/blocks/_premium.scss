@@ -19,9 +19,10 @@
 
 .premium__desc {
     flex-grow: 1;
+    flex-shrink: 0;
     display: flex;
     flex-direction: column;
-    margin-top: remy(97);
+    margin-top: 102px;
     // justify-content: center;
     max-width: remy(489);
 
@@ -68,6 +69,7 @@
 .premium__img {
     display: flex;
     flex-direction: column;
+    flex-shrink: 0;
 
     &-top {
         position: relative;
@@ -76,7 +78,7 @@
 
     &-bottom {
         padding-left: 150px;
-        margin-top: -154px;
+        margin-top: -142px;
 
         
     }
