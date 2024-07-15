@@ -21,12 +21,24 @@
 		@content;
 	}
 }
+@mixin desktopS () {
+    @media (max-width: 1350px) {
+		@content;
+	}
+}
+
+@mixin laptopL () {
+	@media (max-width: 1160px) {
+		@content;
+	}
+}
 
 @mixin laptop () {
     @media (max-width: 1099px) {
 		@content;
 	}
 }
+
 
 @mixin tablet () {
     @media (max-width: 1050px) {

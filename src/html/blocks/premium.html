@@ -25,7 +25,11 @@
                 </div>
                 
                 <div class="premium__img-bottom">
-                    <img src="./img/premium/weights.jpg"  width="422" height="281"  alt="Female doing situps">
+                    <picture>
+                        <source media='(max-width: 600px)' srcset='./img/premium/weights-m.jpg' />
+                        <source media='(min-width: 601px)' srcset='./img/premium/weights.jpg' />
+                        <img src="./img/premium/weights.jpg"  width="422" height="281"  alt="Female doing situps">
+                    </picture>
                 </div>
             </div>
         </div>

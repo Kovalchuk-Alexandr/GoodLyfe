@@ -1,5 +1,5 @@
 .premium {
-    padding: remy(224) remy(155) remy(108) remy(79);
+    padding-block: remy(224) remy(108);
 
     @include mobile {
         padding-block: remy(35) remy(23);
@@ -29,9 +29,11 @@
     @include tablet {
         margin-top: unset;
         justify-content: center;
+        flex-shrink: 1;
     }
     @include mobile {
-        margin-top: unset;
+        max-width: remy(540);
+
     }
 }
 
@@ -49,6 +51,10 @@
     @include mobile {
         margin-bottom: remy(48);
         padding-right: remy(20);
+    }
+    @include mobileS {
+        margin-bottom: remy(39);
+        // padding-right: remy(20);
     }
 }
 
@@ -70,16 +76,46 @@
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
+    width: 572px;
+    aspect-ratio: 572 / 435;
 
-    &-top {
-        position: relative;
+    @include laptopL {
+        width: 458px;
+        &-top {width: 355px;}
+    }
+    @include mobileM {
+        width: 275px;
+        height: 198px;
+    }
+
+    & img {
         z-index: 2;
     }
 
-    &-bottom {
-        padding-left: 150px;
-        margin-top: -142px;
+    &-top {
+        position: relative;
+        aspect-ratio: 3 / 2;
+        width: 444px;
+        @include laptopL {width: 355px;}
+        @include mobileM {
+            width: 202px;
+            height: 135px;
+        }
+    }
 
-        
+    &-bottom {
+        margin-left: 150px;
+        margin-top: -142px;
+        width: 422px;
+        @include laptopL {
+            width: 338px;
+            margin-left: 120px;
+        }
+        @include mobileM {
+            width: 191px;
+            height: 128px;
+            margin-left: 84px;
+            margin-top: -63px;
+        }
     }
 }

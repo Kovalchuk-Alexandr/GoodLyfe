@@ -28,12 +28,16 @@
 	width: 100%;
 	max-width: remy(calc(1206 + 155 + 79));
 
-	@include tablet {
-		justify-content: space-between;
+	@include desktop {
+		padding-inline: 50px;
 	}
 
-	@include mobileM {
-		padding-inline: remy(8);
+	@include tablet {
+		padding-inline: 30px;
+	}
+
+	@include mobile {
+		padding-inline: 16px;
 	}
 }
 
