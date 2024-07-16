@@ -1,9 +1,14 @@
 .result {
-    padding-block: remy(94) remy(122);
-
-    @include mobile {
-        padding-block: remy(35) remy(23);
+    @media (min-width: 1051px) {
+        padding-block: remy(94) remy(122);
     }
+
+    // @include tablet {
+    //     padding-block: remy(50) remy(60);
+    // }	
+    // @include mobile {
+    //     padding-block: remy(35) remy(23);
+    // }
 }
 
 .result-content {
