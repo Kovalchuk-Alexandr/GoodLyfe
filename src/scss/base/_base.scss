@@ -1,6 +1,6 @@
 // @import url(https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800);
 * {
-	// border: 1px solid lightgray;
+	border: 1px solid lightgray;
 }
 
 /* Функция для конвертации px -> rem */
@@ -22,7 +22,17 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 
-	// text-wrap: balance;
+	text-wrap: balance;
+}
+
+*.section-pb {
+	padding-block: remy(64) remy(71);
+	@include tablet {
+        padding-block: remy(50) remy(60);
+    }	
+	@include mobile {
+        padding-block: remy(35) remy(23);
+    }	
 }
 
 img {

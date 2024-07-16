@@ -21,6 +21,26 @@
 	}
 }
 
+.premium-container {
+	margin: 0 auto;
+	padding-inline: remy(155) remy(79);
+	
+	width: 100%;
+	max-width: remy(calc(1206 + 155 + 79));
+
+	@include desktop {
+		padding-inline: 50px;
+	}
+
+	@include tablet {
+		padding-inline: 30px;
+	}
+
+	@include mobile {
+		padding-inline: 16px;
+	}
+}
+
 /* Контейнеры */
 .container {
 	margin: 0 auto;
