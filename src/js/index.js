@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 /*  =====================   Header Slider  ==========================  */
-const headerSwiper = new Swiper(".header-slider", {
+const headerSwiper = new Swiper(".swiper", {
     // Optional parameters
     // slidesPerView: 1,
     loop: true,
