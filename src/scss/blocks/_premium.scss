@@ -1,4 +1,7 @@
 .premium {
+    // padding-block: remy(74) remy(28);
+    padding-top: clamp(4.625rem, 0.515rem + 20.55vw, 14rem);
+    padding-bottom: clamp(1.75rem, -0.442rem + 10.96vw, 6.75rem);
     @media (min-width: 1051px) {
         padding-block: remy(224) remy(108);
     }

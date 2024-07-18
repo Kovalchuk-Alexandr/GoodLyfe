@@ -14,8 +14,7 @@
         margin-bottom: remy(22);
     }
  
-    .btn {
-        font-family: var(--font3);}
+    .btn {font-family: var(--font3);}
 
     @include mobile {
         top: 43%;

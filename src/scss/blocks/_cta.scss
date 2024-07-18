@@ -1,3 +1,7 @@
 .swiper {
+    --swiper-pagination-bottom: 26px;
+
     &__item-bg {background: rgba(57, 57, 57, 0.22);}
 }
+
+.cta .slider-content {padding-bottom: 0;}

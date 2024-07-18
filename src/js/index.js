@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 /*  =====================   Header Slider  ==========================  */
-const headerSwiper = new Swiper(".swiper", {
+const headerSwiper = new Swiper(".header-slider", {
     // Optional parameters
     // slidesPerView: 1,
     loop: true,
@@ -59,12 +59,26 @@ const headerSwiper = new Swiper(".swiper", {
         el: ".swiper-pagination",
         clickable: true,
     },
+});
 
-    // Navigation arrows
-    // navigation: {
-    //     nextEl: ".swiper-button-next",
-    //     prevEl: ".swiper-button-prev",
-    // },
+
+/*  =====================   Cta Slider  ==========================  */
+const ctaSwiper = new Swiper(".cta-slider", {
+    // Optional parameters
+    // slidesPerView: 1,
+    loop: true,
+    spaceBetween: 30,
+    effect: "fade",
+    lazy: true,
+    grabCursor: true,
+    // freeMode: true,
+    speed: 1000, //Скорость прокрутки
+
+    // If we need pagination
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
 });
 
 
