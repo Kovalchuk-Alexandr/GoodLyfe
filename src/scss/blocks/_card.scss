@@ -1,0 +1,87 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.18);
+    background: #fff;
+
+    &__title {
+        margin-bottom: 29px;
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 119%;
+        color: var(--premium-pink);
+    }
+    &__text  {
+        position: relative;
+        padding-left: 37px;
+        padding-bottom: 22px;
+
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 178%;
+        color: var(--grey-copy);
+
+        &::before {
+            content: "\201C";
+            // content: url('./../img/stories/quote.svg');
+            
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            // width: 29px;
+            // height: 29px;
+
+            font-family: var(--third-family);
+            font-weight: 700;
+            font-size: 58px;
+
+            color: #f8c5d7
+            // background-image: url('./../');
+            // background-repeat: no-repeat;
+        }
+    }
+
+    &__user {
+        padding-left: 37px;
+        display: flex;
+        align-items: center;
+        gap: 17px;
+
+        font-family: var(--font-family);
+
+        &-name  {
+            font-weight: 600;
+            font-size: 18px;
+            // line-height: 189%;
+            color: var(--grey-copy);
+        }
+        &-status {
+            font-weight: 400;
+            font-size: 14px;
+            // line-height: 243%;
+            color: #969bab;
+        }
+    }
+}
+
+.card1{
+    width: 349px;
+    height: 445px;
+
+    padding: 35px 32px 35px 27px;
+}
+.card2{
+    width: 449px;
+    height: 343px;
+
+    padding: 35px 32px 35px 27px;
+}
+.card3{
+    width: 351px;
+    height: 278px;
+
+    padding: 35px 32px 35px 27px;
+}

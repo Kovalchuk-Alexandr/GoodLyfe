@@ -41,6 +41,14 @@
 	}
 }
 
+.stories-container {
+	margin: 0 auto;
+	padding-inline: remy(16);
+	
+	width: 100%;
+	max-width: remy(930);
+}
+
 /* Контейнеры */
 .container {
 	margin: 0 auto;

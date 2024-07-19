@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "title": "3Kg lost!",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget lectus urna. Nulla magna tortor, bibendum in molestie sed, gravida nec felis. Sed id egestasegestas risu.",
+        "name": "James John",
+        "img": "james-john.png",
+        "status": "Father of one"
+    },
+    {
+        "id": "2",
+        "title": "17Kg lost!",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget lectus urna. Nulla magna tortor, bibendum in mo.",
+        "name": "Mary Patricia",
+        "img": "mary-patricia.png",
+        "status": "Mother of two"
+    },
+    {
+        "id": "3",
+        "title": "43Kg lost!",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "name": "Robert Micheal",
+        "img": "robert-micheal.png",
+        "status": "Father of three"
+    }
+]

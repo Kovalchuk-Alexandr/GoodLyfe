@@ -1,0 +1,15 @@
+<!-- ====================  STORIES  =================== -->
+ <section class="stories">
+    <div class="stories-container">
+        <div class="stories__title">
+            <h2 class="h3">Real Stories from Real Customers</h2>
+            <p class="desc">Be inspired with these experiences.</p>
+        </div>
+
+        <div class="stories__cards">
+            <!-- @@include('templates/card.html') -->
+            @@loop('./templates/card.html', './data/stories.json')
+            
+        </div>
+    </div>
+ </section>

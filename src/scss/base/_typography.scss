@@ -14,13 +14,13 @@
 }
 
 .title-3,.title-5,
-.h3 .h5 {
+.h3, .h5 {
 	font-family: var(--font-family);
 	font-weight: 600;
 	// font-size: 48px;
     font-size: remy(48);
-	line-height: 110%;
-	color: #000;
+	line-height: 119%;
+	color: var(--grey-copy);
 }
 
 .title-4, .h4 {
