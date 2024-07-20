@@ -14,11 +14,8 @@
 }
 
 .swiper-slide {
-    & .card-slider  {
+    &.card-slider  {
         @include laptopL {
-            // position: static;
-            // justify-self: unset;
-            // margin-top: unset;
             width: 349px;
             height: 445px;
             padding: 35px 32px 35px 27px;
@@ -32,9 +29,5 @@
             padding: 24px 18px;
             box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.18);
         }
-    }
-
-    & .card__title {
-        
     }
 }

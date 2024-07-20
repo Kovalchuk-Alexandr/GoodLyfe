@@ -84,8 +84,8 @@ const ctaSwiper = new Swiper(".cta-slider", {
 const storiesSwiper = new Swiper(".stories-slider", {
     // Optional parameters
     direction: "horizontal",
-    slidesPerView: 2,
-    spaceBetween: 20,
+    slidesPerView: "auto",
+    spaceBetween: 26,
     loop: true,
     // effect: "fade",
     lazy: true,
@@ -93,17 +93,17 @@ const storiesSwiper = new Swiper(".stories-slider", {
     freeMode: true,
     speed: 1000, //Скорость прокрутки
     breakpoints: {
-        500: {
-            slidesPerView: 2,
-            spaceBetween: 26,
-        },
+        // 510: {
+        //     slidesPerView: 'auto',
+        //     spaceBetween: 26,
+        // },
         768: {
-            slidesPerView: 2,
-            spaceBetween: 20,
+            slidesPerView: 'auto',
+            spaceBetween: 33,
         },
         // 1160: {
-        //     slidesPerView: 3,
-        //     spaceBetween: 30,
+        //     slidesPerView: 'auto',
+        //     spaceBetween: 33,
         // },
     },
 });
