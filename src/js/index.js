@@ -80,5 +80,32 @@ const ctaSwiper = new Swiper(".cta-slider", {
         clickable: true,
     },
 });
+/*  =====================   Stories Slider  ==========================  */
+const storiesSwiper = new Swiper(".stories-slider", {
+    // Optional parameters
+    direction: "horizontal",
+    slidesPerView: 2,
+    spaceBetween: 20,
+    loop: true,
+    // effect: "fade",
+    lazy: true,
+    grabCursor: true,
+    freeMode: true,
+    speed: 1000, //Скорость прокрутки
+    breakpoints: {
+        500: {
+            slidesPerView: 2,
+            spaceBetween: 26,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        // 1160: {
+        //     slidesPerView: 3,
+        //     spaceBetween: 30,
+        // },
+    },
+});
 
 

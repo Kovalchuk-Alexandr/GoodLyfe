@@ -21,6 +21,10 @@
     font-size: remy(48);
 	line-height: 119%;
 	color: var(--grey-copy);
+
+	@include tablet {font-size: 40px;}
+	@include mobile {font-size: 32px;}
+	@include mobileM {font-size: 26px;}
 }
 
 .title-4, .h4 {
