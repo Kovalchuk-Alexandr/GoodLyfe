@@ -14,7 +14,31 @@
             font-size: 18px;
             color: var(--grey-copy);
         }
+        @include mobile {
+            margin-bottom: 25px;
+            .h3  {margin-bottom: 7px;}
+            .desc {font-size: 9px;}
+        }
     }
 
+    &-wrapper {
+        display: grid;
+        grid-template-columns: 446px 446px;
+        grid-template-rows: auto auto;
+        grid-auto-flow: column;
+        gap: 37px;
+
+        @include laptopL {
+            display: none;
+        }
+    }
+
+    &__slider {
+        display: none;
+
+        @include laptopL {
+            display: block;
+        }
+    }
 
 }

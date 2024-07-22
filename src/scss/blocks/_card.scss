@@ -12,6 +12,11 @@
         font-size: 38px;
         line-height: 119%;
         color: var(--premium-pink);
+
+        @include mobile {
+            margin-bottom: 20px;
+            font-size: 26px;
+        }
     }
     &__text  {
         position: relative;
@@ -23,6 +28,12 @@
         font-size: 18px;
         line-height: 178%;
         color: var(--grey-copy);
+
+        @include mobile {
+            padding-left: 26px;
+            padding-bottom: 15px;
+            font-size: 12px;
+        }
 
         &::before {
             content: "\201C";
@@ -38,9 +49,10 @@
             font-weight: 700;
             font-size: 58px;
 
-            color: #f8c5d7
-            // background-image: url('./../');
-            // background-repeat: no-repeat;
+            color: #f8c5d7;
+            @include mobile {
+                font-size: 40px;
+            }
         }
     }
 
@@ -51,6 +63,13 @@
         gap: 17px;
 
         font-family: var(--font-family);
+
+        &-img {
+            flex-shrink: 0;
+            border-radius: 317px;
+            width: 59px;
+            height: 57px;
+        }
 
         &-name  {
             font-weight: 600;
@@ -64,12 +83,29 @@
             // line-height: 243%;
             color: #969bab;
         }
+
+        @include mobile {
+            padding-left: 26px;
+            gap: 13px;
+
+            &-img {
+                border-radius: 221px;
+                width: 41px;
+                height: 39px;
+            }
+            &-name  {font-size: 12px;}
+            &-status {font-size: 9px;}
+        }
     }
 }
 
 .card1{
+    justify-self: flex-end;
+    position: relative;
+    top: -50%;
     width: 349px;
     height: 445px;
+
 
     padding: 35px 32px 35px 27px;
 }
@@ -77,6 +113,7 @@
     width: 449px;
     height: 343px;
 
+    margin-top: 39px;
     padding: 35px 32px 35px 27px;
 }
 .card3{
