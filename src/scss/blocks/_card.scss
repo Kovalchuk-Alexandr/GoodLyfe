@@ -65,6 +65,7 @@
         font-family: var(--font-family);
 
         &-img {
+            flex-shrink: 0;
             border-radius: 317px;
             width: 59px;
             height: 57px;

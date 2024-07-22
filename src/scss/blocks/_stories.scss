@@ -24,9 +24,9 @@
     &-wrapper {
         display: grid;
         grid-template-columns: 446px 446px;
+        grid-template-rows: auto auto;
         grid-auto-flow: column;
         gap: 37px;
-        grid-template-rows: auto auto;
 
         @include laptopL {
             display: none;
