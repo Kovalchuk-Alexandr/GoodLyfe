@@ -1,0 +1,61 @@
+.remember {
+    padding-top: 118px;
+    padding-bottom: 76px;
+    max-height: 491px;
+
+    color: var(--white);
+    background: var(--premium-pink);
+
+    &-container {display: flex; gap: 70px;}
+
+    &-content {
+        // margin-top: 118px;
+        &__title {margin-bottom: 11px;}
+        &__text {
+            color: inherit;
+            max-width: 489px;
+            margin-bottom: 11px;
+        }
+    }
+}
+
+.remember-links {
+    &__text {
+        margin-bottom: 2px;
+        // line-height: 1;
+        color: rgba(255, 255, 255, 0.6);
+    }
+    &__group {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+}
+
+.remember__images {
+    display: flex;
+    column-gap: 32px;
+    width: 496px;
+    height: 598px;
+
+    &-phone1 {
+        margin-top: -27px;
+        width: 232px;
+        height: 464px;
+        align-self: start;
+
+        box-shadow: 10px 15px 30px rgba(41, 41, 42, 0.5);
+    }
+    &-phone2 {
+        width: 232px;
+        height: 464px;
+        align-self: end;
+        margin-bottom: 27px;
+
+        box-shadow: 10px 15px 30px rgba(41, 41, 42, 0.5);
+    }
+     img {
+        width: 100%;
+        height: 100%;
+     }
+}

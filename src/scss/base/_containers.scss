@@ -49,6 +49,24 @@
 	max-width: remy(930);
 }
 
+.remember-container {
+	margin: 0 auto;
+	padding-inline: 238px 147px;
+
+	@include desktopS {
+		// margin: 0 auto;
+		padding-inline: 40px;
+		justify-content: center;
+	}
+
+	@include mobile {
+		padding-inline: remy(16);
+	}
+	
+	width: 100%;
+	max-width: remy(1440);
+}
+
 /* Контейнеры */
 .container {
 	margin: 0 auto;
