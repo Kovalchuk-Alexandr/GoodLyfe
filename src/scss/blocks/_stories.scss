@@ -1,6 +1,6 @@
 .stories {
     padding-block: remy(126) remy(80);
-    height: remy(900);
+    // height: remy(900);
     // background: #f4e3e9;
     background: linear-gradient(to top, #f4e3e9 0%, rgba(255, 255, 255, 0) 100%);
 
@@ -39,6 +39,10 @@
         @include laptopL {
             display: block;
         }
+    }
+
+    @include mobile {
+        padding-block: remy(48) remy(38);
     }
 
 }

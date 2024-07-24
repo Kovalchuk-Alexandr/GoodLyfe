@@ -1,5 +1,6 @@
 <!-- ===============  Don’t forget our app  ========================== -->
  <section class="remember">
+    <!-- <div class="remember-tagline"></div> -->
     <div class="remember-container">
         <div class="remember-content">
             <h2 class="h4 remember-content__title">Don’t forget our app</h2>
@@ -23,11 +24,19 @@
 
 
         <div class="remember__images">
-            <div class="remember__images-phone1">
-                <img src="./img/remember/phone11.webp" width="232" height="464" alt="Picture phone1">
+            <div class="remember__images-phone remember__images-phone1">
+                <picture>
+                    <source media='(max-width: 600px)' srcset='./img/remember/phone11-m.webp' />
+                    <source media='(min-width: 601px)' srcset='./img/remember/phone11.webp' />
+                    <img src="./img/remember/phone11.webp" width="232" height="464" alt="Picture phone1">
+                </picture>
             </div>
-            <div class="remember__images-phone2">
-                <img src="./img/remember/phone21.webp" width="232" height="464" alt="Picture phone2">
+            <div class="remember__images-phone remember__images-phone2 ">
+                <picture>
+                    <source media='(max-width: 600px)' srcset='./img/remember/phone21-m.webp' />
+                    <source media='(min-width: 601px)' srcset='./img/remember/phone21.webp' />
+                    <img src="./img/remember/phone21.webp" width="232" height="464" alt="Picture phone1">
+                </picture>
             </div>
         </div>
     </div>

@@ -1,20 +1,70 @@
 .remember {
-    padding-top: 118px;
-    padding-bottom: 76px;
-    max-height: 491px;
+    // padding-top: 118px;
+    // max-height: 519px;
+    padding-bottom: 28px;
 
     color: var(--white);
     background: var(--premium-pink);
+    // overflow-y: hidden;
 
-    &-container {display: flex; gap: 70px;}
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+    @include mobileL {
+        padding-bottom: 68px;
+    }
+    @include mobileM {
+        padding-bottom: 98px;
+        overflow-x: clip;
+        // overflow-y: hidden;
+    }
+
+    &-tagline {
+        height: 28px;
+        background: #f4e4ea;
+    }
+
+    &-container {
+        display: flex;
+        column-gap: 70px;
+
+        @include laptopL {
+            column-gap: 30px;
+            justify-content: space-between;    
+        }
+        @include mobileL {
+            flex-direction: column;
+            align-items: center;
+            row-gap: 39px;
+        }
+        @include mobileM {
+            // overflow-x: hidden;
+        }
+    }
 
     &-content {
-        // margin-top: 118px;
+        margin-top: 118px;
+        height: 100%;
+        max-width: 489px;
+
+        flex-shrink: 0;
+
         &__title {margin-bottom: 11px;}
         &__text {
             color: inherit;
-            max-width: 489px;
             margin-bottom: 11px;
+        }
+
+        @include laptopL {
+            margin-top: 80px;
+            flex-shrink: 1;
+            min-width: 270px;
+        }
+        @include mobile {
+            margin-top: 48px;
+            &__title {margin-bottom: 8px;}
+            &__text {
+                margin-bottom: 27px;
+            }
         }
     }
 }
@@ -30,32 +80,62 @@
         align-items: center;
         gap: 12px;
     }
+    @include mobileM {
+        &__text {
+            margin-bottom: 5px;
+        }
+        &__group {justify-content: center;}
+    }
 }
 
 .remember__images {
     display: flex;
     column-gap: 32px;
     width: 496px;
-    height: 598px;
+    // height: 598px;
+    @include mobileM {
+        column-gap: 18px;
+        justify-content: start;
+        align-items: start;
+        width: 100%;
+    }
+
+    &-phone {
+        width: 232px;
+        height: 464px;
+        flex-shrink: 0;
+        border-radius: 20px;
+        box-shadow: 10px 15px 30px rgba(41, 41, 42, 0.5);
+    }
 
     &-phone1 {
         margin-top: -27px;
-        width: 232px;
-        height: 464px;
         align-self: start;
-
-        box-shadow: 10px 15px 30px rgba(41, 41, 42, 0.5);
     }
-    &-phone2 {
-        width: 232px;
-        height: 464px;
-        align-self: end;
-        margin-bottom: 27px;
 
-        box-shadow: 10px 15px 30px rgba(41, 41, 42, 0.5);
+    &-phone2 {
+        position: relative;
+        top: 105px;
     }
      img {
         width: 100%;
         height: 100%;
+     }
+
+     @include mobileL {
+         &-phone1 {
+            margin-top: 0;
+            align-self: start;
+        }
+     }
+     @include mobileM {
+         &-phone {
+            margin-left: 5px;
+            width: 166px;
+            height: 332px;
+        }
+         &-phone2 {
+            top: 123px;
+        }
      }
 }
