@@ -101,7 +101,43 @@
 	// 	&-770 {display: none;}
 	// 	&-320 {display: block;}
 	// }
+}
 
-	
+.icon-social {
+	fill: #E43071;
+	transition: all 0.3s ease-in;
+}
 
+.icon--facebook {
+	width: 15px;
+	height: 30px;
+	fill: #E43071;
+	stroke: #E43071;
+}
+.icon--youtube {
+	width: 24px;
+	height: 29px;
+	// fill: #E43071;
+	// stroke: #E43071;
+}
+.icon--instagram {
+	width: 30px;
+	height: 30px;
+	fill: #E43071;
+	stroke: #E43071;
+}
+
+@include mobileM {
+	.icon--facebook {
+		width: 11px;
+		height: 21px;
+	}
+	.icon--youtube {
+		width: 16px;
+		height: 20px;
+	}
+	.icon--instagram {
+		width: 20px;
+		height: 20px;
+	}
 }
