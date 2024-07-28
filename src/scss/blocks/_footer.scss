@@ -1,26 +1,125 @@
 .footer {
-	background-color: rgb(39, 39, 39);
-	padding: 50px 0;
-	font-size: 32px;
-    color: #fff;
+	background-color: var(--footer-bg);
+	padding-block: 96px 24px;
 
-	h1 {
-		font-size: 32px;
+	font-family: var(--second-family);
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 171%;
+	color: var(--footer-text);
+
+	a:not(.footer__social-item) {
+		color: var(--footer-text);
+		transition: opacity 0.2s ease-in;
+
+		&:hover {opacity: 0.75;}
 	}
 
-	a {
-		// color: var(--link-color);
-		color: #fff;
-		text-decoration: underline;
+	&-row {
+		display: flex;
+		justify-content: space-between;
+		gap: 30px;
+		margin-bottom: 105px;
 	}
 
-	@media (max-width: 1200px) {
-		font-size: 26px;
+	&__promo {
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		gap: 24px;
+
+		max-width: 255px;
+	}
+	&__social {
+		display: flex;
+		gap: 16px;
+		align-items: center;
+		justify-content: center;
+
+		&-item {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-shrink: 0;
+
+			width: 24px;
+			aspect-ratio: 1;
+
+			border-radius: 50%;
+			background-color: rgba(255, 255, 255, 0.1);
+
+			transition: all 0.3s ease-in;
+
+			&:hover {
+				// background-color: var(--white);
+				background-color: var(--premium-pink);
+
+				.icon-footer {
+					// fill: var(--footer-bg);
+					transform: scale(1.2);
+				}
+			}
+		}
 	}
 }
 
-.footer__copyright {
-	padding: 10px 0;
-	font-size: 16px;
+.footer__logo {
+		font-family: var(--font-family);
+		font-weight: 800;
+		font-size: 25px;
+		line-height: 110%;
+		text-align: center;
+		color: var(--white);
 
+	span {color: var(--premium-pink);}
+}
+
+.footer__menu {
+	width: 245px;
+
+	&-list {
+		li + li {margin-top: 12px;}
+		// display: flex;
+		// flex-direction: column;
+		// gap: 12px;
+	}
+}
+
+.footer__contacts {
+	width: 245px;
+
+	&-list {
+		li + li {margin-top: 24px;}
+	}
+	&-link {
+		display: flex;
+		justify-content: start;
+		align-items: center;
+		gap: 8px;
+
+		white-space: nowrap;
+	}
+}
+
+.footer__info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer__terms-nav {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+
+	// a + a {
+	// 	margin-left: 16px;
+	// 	padding-left: 16px;
+	// }
+}
+
+.divider {
+	width: 2px;
+	height: 1rem;
+	background-color: var(--footer-text);
 }

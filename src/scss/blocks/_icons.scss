@@ -141,3 +141,30 @@
 		height: 20px;
 	}
 }
+
+.icon-footer {
+	fill: var(--white);
+	transition: all 0.3s ease-in;
+
+	width: 14px;
+	height: 14px;
+
+	&--f-twitter  {
+		width: 12px;
+		height: 11px;
+	}
+	&--f-youtube  {
+		height: 11px;
+	}
+}
+
+.icon-footer__contacts {
+	flex-shrink: 0;
+	fill: var(--premium-pink);
+
+	width: 24px;
+	height: 24px;
+
+
+}
+
