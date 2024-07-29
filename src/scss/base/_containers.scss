@@ -73,6 +73,15 @@
 	
 	width: 100%;
 	max-width: remy(1440);
+
+	@include desktopS {
+		padding-inline: 60px;
+		justify-content: center;
+	}
+
+	@include mobileL {
+		padding-inline: remy(32);
+	}
 }
 
 /* Контейнеры */
