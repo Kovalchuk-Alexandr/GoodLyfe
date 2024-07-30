@@ -126,7 +126,7 @@ if (toggleTheme) {
     });
 }
 
-/* =========  Toggle theme color  =============  */
+/* =========  Back to top button  =============  */
 const header = document.querySelector("header");
 const backTopBtn = document.querySelector(".back-to-top");
 

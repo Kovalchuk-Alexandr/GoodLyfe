@@ -37,7 +37,7 @@ input[type=submit].btn-outline {
 
 .btn:focus {
     background-color: var(--primary);
-    outline: 8px solid $pink-subtle;
+    outline: 8px solid var(--subtle);
 }
 
 .btn-outline,
@@ -68,13 +68,13 @@ input[type=submit].btn-outline {
 }
 
 .btn-outline:focus {
-    color: $premium-pink;
-    border: remy(2) solid $premium-pink;
-    outline: remy(8) solid $pink-subtle;
+    color: var(--primary);
+    border: remy(2) solid var(--primary);
+    outline: remy(8) solid var(--subtle);
 }
 
 .btn-outline.btn-outline--small:focus {
-    outline: remy(4) solid $pink-subtle;
+    outline: remy(4) solid var(--subtle);
 }
 
 .search-open {

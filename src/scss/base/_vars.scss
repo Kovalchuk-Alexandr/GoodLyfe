@@ -15,6 +15,7 @@
 	--primary-hover: var(--pink-hover);
 	--muted: var(--pink-muted);
 	--accent: #ffdae7;
+	--subtle: var(--pink-subtle);
 	--black: #252525;
 	--link-color: #2578c8;
 
@@ -25,7 +26,7 @@
 	--premium-pink: #e43071;
 	--pink-hover: #be285e;
 	--grey-copy: #424242;
-	--pink-subtle: rgb(255, 218, 231);
+	--pink-subtle: #ffdae7;
 	--pink-muted: #ffc1d8;
 	--dark-disabled: #d37899;
 	--light-grey: #f2f3f8;
@@ -57,6 +58,7 @@
 	--primary-hover: #1da067;
 	--accent: #9be8c7;
 	--muted: #9be8c7;
+	--subtle: var(--accent);
 	--link-color: #2578c8;
 	--decor-color: #86e4bc;
     // --page-bg: #252526;
