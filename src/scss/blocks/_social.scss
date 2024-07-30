@@ -5,7 +5,7 @@
     background: #ededed;
 
     &__title {
-        color: var(--premium-pink);
+        color: var(--primary);
         text-align: center;
         margin-bottom: 24px;
     }
@@ -39,7 +39,7 @@
     transition: all 0.3s ease-in;
 
     &:hover {
-        background-color: var(--premium-pink);
+        background-color: var(--primary);
 
         .icon-social {
             fill: var(--white);

@@ -15,13 +15,30 @@
 	</head>
 
 	<body class="">
+		<!-- ======= Fade для мобильной навигации  =================== -->
 		<div class="mobile-nav-fade"></div>
-		<header class="header">
+
+		<!-- ======= Кнопка возврата к верху  ======================== -->
+		<!-- ======= Кнопка возврата к верху  ======================== -->
+		<a href="#header" class="back-to-top">
+			<svg class="icon icon--arrow-up">
+				<use href="./img/svgsprite/sprite.symbol.svg#arrow-up"></use>
+			</svg>
+		</a>
+		<!-- <a href="#header" class="back-to-top">
+		<svg class="icon icon--arrow-up">
+			<use href="./img/svgsprite/sprite.symbol.svg#arrow-up"></use>
+		</svg>
+	 </a> -->
+
+		<!-- ===============  HEADER  ================================ -->
+		<header class="header" id="header">
 			<!-- -----------  Navigation  ------------------ -->
 			<div class="header-nav">
 				<div class="header-container d-flex">
 					<a href="#!" class="nav__logo">
-						<img src="./img/header/logo.svg" alt="Logo" class="nav__logo-img" />
+						<!-- <img src="./img/header/logo.svg" alt="Logo" class="nav__logo-img"> -->
+						<h3 class="">Good<span class="accent-span">lyfe</span></h3>
 					</a>
 
 					<nav class="header-menu d-flex">
@@ -33,6 +50,13 @@
 					</nav>
 
 					<div class="header-nav__btn d-flex">
+						<!-- ======= Переключатель цвета темы  ======================= -->
+						<!-- ======= Переключатель цвета темы  ======================= -->
+						<label for="toggle-theme__input" class="toggle-theme">
+							<input type="checkbox" name="toggle-input" id="toggle-theme__input" class="toggle-theme__input" />
+							<span class="toggle-theme__dot"></span>
+						</label>
+
 						<button class="search-open" id="search-open">
 							<span class="search-open__text">Search</span>
 
@@ -212,7 +236,7 @@
 									</picture>
 								</div>
 								<div class="card__user-desc">
-									<div class="card__user-name">James John ID: 1</div>
+									<div class="card__user-name">James John</div>
 									<div class="card__user-status">Father of&#160;one</div>
 								</div>
 							</div>
@@ -242,7 +266,7 @@
 									</picture>
 								</div>
 								<div class="card__user-desc">
-									<div class="card__user-name">Mary Patricia ID: 2</div>
+									<div class="card__user-name">Mary Patricia</div>
 									<div class="card__user-status">Mother of&#160;two</div>
 								</div>
 							</div>
@@ -272,7 +296,7 @@
 									</picture>
 								</div>
 								<div class="card__user-desc">
-									<div class="card__user-name">Robert Micheal ID: 3</div>
+									<div class="card__user-name">Robert Micheal</div>
 									<div class="card__user-status">Father of&#160;three</div>
 								</div>
 							</div>

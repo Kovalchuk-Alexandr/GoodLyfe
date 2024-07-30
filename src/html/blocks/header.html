@@ -1,9 +1,10 @@
-<header class="header">
+<header class="header" id="header">
     <!-- -----------  Navigation  ------------------ -->
     <div class="header-nav">
         <div class="header-container d-flex">
             <a href="#!" class="nav__logo">
-                <img src="./img/header/logo.svg" alt="Logo" class="nav__logo-img">
+                <!-- <img src="./img/header/logo.svg" alt="Logo" class="nav__logo-img"> -->
+                <h3 class="">Good<span class="accent-span">lyfe</span></h3>
             </a>
 
             <nav class="header-menu d-flex">
@@ -15,6 +16,9 @@
             </nav>
 
             <div class="header-nav__btn d-flex" >
+                <!-- ======= Переключатель цвета темы  ======================= -->
+            	@@include('./toggle-theme.html')
+
                 <button class="search-open" id="search-open">
                     <span class="search-open__text">Search</span>
 

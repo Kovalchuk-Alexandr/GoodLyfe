@@ -12,12 +12,13 @@
 	</head>
 
 	<body>
-		<header class="header">
+		<header class="header" id="header">
 			<!-- -----------  Navigation  ------------------ -->
 			<div class="header-nav">
 				<div class="header-container d-flex">
 					<a href="#!" class="nav__logo">
-						<img src="./img/header/logo.svg" alt="Logo" class="nav__logo-img" />
+						<!-- <img src="./img/header/logo.svg" alt="Logo" class="nav__logo-img"> -->
+						<h3 class="">Good<span class="accent-span">lyfe</span></h3>
 					</a>
 
 					<nav class="header-menu d-flex">
@@ -29,6 +30,13 @@
 					</nav>
 
 					<div class="header-nav__btn d-flex">
+						<!-- ======= Переключатель цвета темы  ======================= -->
+						<!-- ======= Переключатель цвета темы  ======================= -->
+						<label for="toggle-theme__input" class="toggle-theme">
+							<input type="checkbox" name="toggle-input" id="toggle-theme__input" class="toggle-theme__input" />
+							<span class="toggle-theme__dot"></span>
+						</label>
+
 						<button class="search-open" id="search-open">
 							<span class="search-open__text">Search</span>
 

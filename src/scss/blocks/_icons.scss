@@ -104,27 +104,22 @@
 }
 
 .icon-social {
-	fill: #E43071;
+	fill: var(--primary);
 	transition: all 0.3s ease-in;
 }
 
 .icon--facebook {
 	width: 15px;
 	height: 30px;
-	fill: #E43071;
-	stroke: #E43071;
+	// stroke: var(--primary);
 }
 .icon--youtube {
 	width: 24px;
 	height: 29px;
-	// fill: #E43071;
-	// stroke: #E43071;
 }
 .icon--instagram {
 	width: 30px;
 	height: 30px;
-	fill: #E43071;
-	stroke: #E43071;
 }
 
 @include mobileM {
@@ -160,11 +155,22 @@
 
 .icon-footer__contacts {
 	flex-shrink: 0;
-	fill: var(--premium-pink);
+	fill: var(--primary);
 
 	width: 24px;
 	height: 24px;
+}
 
-
+.icon--arrow-up {
+	width: 48px;
+	height: 48px;
+	fill: var(--primary);
+	transform: translate(-2px, -1px);
+	stroke: rgba(141, 95, 95, 0.6);
+	stroke-width: 0.5px;
+	// fill: transparent;
+	// stroke: transparent;
+	// stroke: var(--primary);
+	// background-color: var(-accent);
 }
 

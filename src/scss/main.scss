@@ -5,6 +5,7 @@
 @import './base/fontsAutoGen';
 @import './base/base';
 @import './base/typography';
+@import './base/toggle-theme';
 @import './base/docs'; /* Отключить при необходимости */
 @import './base/utils'; // Тест на ошибку
 @import './base/containers';
@@ -15,6 +16,7 @@
 /* Blocks */
 @import './blocks/*.scss';
 @import './blocks/icons';
+@import './blocks/back-to-top-btn';
 @import './blocks/header-slider';
 @import './blocks/cta';
 @import './blocks/stories-slider';

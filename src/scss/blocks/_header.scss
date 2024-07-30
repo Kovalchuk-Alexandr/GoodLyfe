@@ -21,24 +21,37 @@
 	flex-shrink: 0;
 	gap: remy(37);
 
-	@include laptop {
+	@include laptopL {
 		gap: 1.5rem;
+	}
+	@include mobileS {
+		gap: remy(18);
 	}
 }
 
 .search-open__text,
 .btn-outline--small {
-	@include mobileM {
+	@include mobile {
 		display: none;
 	}
 }
 
 .nav__logo {
 	flex-shrink: 0;
-	margin-right: remy(20);
+	margin-right: remy(40);
+
+	font-weight: 800;
+	font-size: 40px;
+	line-height: 110%;
+	text-align: center;
+	color: var(--white);
 
 	@include laptop {
 		max-width: remy(160);
+	}
+	@include mobileM {
+		font-size: 30px !important;
+		margin-right: remy(20);
 	}
 }
 
@@ -109,7 +122,4 @@
 		width: 100%;
 		height: 100%;
 	}
-	
 }
-
-

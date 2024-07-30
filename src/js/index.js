@@ -80,6 +80,7 @@ const ctaSwiper = new Swiper(".cta-slider", {
         clickable: true,
     },
 });
+
 /*  =====================   Stories Slider  ==========================  */
 const storiesSwiper = new Swiper(".stories-slider", {
     // Optional parameters
@@ -108,4 +109,38 @@ const storiesSwiper = new Swiper(".stories-slider", {
     },
 });
 
+/* =========  Toggle theme color  =============  */
+const toggleTheme = document.querySelector(".toggle-theme");
+const bodyEl = document.body;
+
+if (toggleTheme) {
+    const toggleThemeInput = document.querySelector("#toggle-theme__input");
+    
+    toggleTheme.addEventListener('click', function() {
+        console.log('Click!!!');
+        if (toggleThemeInput.checked) {
+            bodyEl.classList.add('green');
+        } else {
+            bodyEl.classList.remove("green");
+        }
+    });
+}
+
+/* =========  Toggle theme color  =============  */
+const header = document.querySelector("header");
+const backTopBtn = document.querySelector(".back-to-top");
+
+window.onscroll = function() {
+    // console.log("window.scrollY: " + window.scrollY);
+    // console.log('header.clientHeight: ' + header.clientHeight);
+    // console.log('backTopBtn.scrollTop: ' + backTopBtn.scrollTop);
+
+    if (window.scrollY > header.clientHeight) {
+        // console.log('Overflow');
+        backTopBtn.classList.add("back-to-top--on");
+    } else {
+        // console.log('Downflow');
+        backTopBtn.classList.remove("back-to-top--on");
+    }
+};
 
