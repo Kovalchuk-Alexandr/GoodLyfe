@@ -128,19 +128,22 @@ if (toggleTheme) {
 
 /* =========  Back to top button  =============  */
 const header = document.querySelector("header");
-const backTopBtn = document.querySelector(".back-to-top");
+const backTopBtn = document.querySelector(".back-top");
 
-window.onscroll = function() {
-    // console.log("window.scrollY: " + window.scrollY);
-    // console.log('header.clientHeight: ' + header.clientHeight);
-    // console.log('backTopBtn.scrollTop: ' + backTopBtn.scrollTop);
+if (backTopBtn) {
+    
+    window.onscroll = function() {
+        // console.log("window.scrollY: " + window.scrollY);
+        // console.log('header.clientHeight: ' + header.clientHeight);
+        // console.log('backTopBtn.scrollTop: ' + backTopBtn.scrollTop);
 
-    if (window.scrollY > header.clientHeight) {
-        // console.log('Overflow');
-        backTopBtn.classList.add("back-to-top--on");
-    } else {
-        // console.log('Downflow');
-        backTopBtn.classList.remove("back-to-top--on");
-    }
-};
+        if (window.scrollY > header.clientHeight) {
+            // console.log('Overflow');
+            backTopBtn.classList.add("back-top--on");
+        } else {
+            // console.log('Downflow');
+            backTopBtn.classList.remove("back-top--on");
+        }
+    };
+}
 
