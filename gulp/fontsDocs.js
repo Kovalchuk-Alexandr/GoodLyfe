@@ -5,6 +5,7 @@ const fs = require('fs');
 const gulp = require('gulp');
 const fonter = require('gulp-fonter-fix');
 const ttf2woff2 = require('gulp-ttf2woff2');
+const changed = require("gulp-changed");
 
 const srcFolder = './src';
 const destFolder = './docs';

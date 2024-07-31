@@ -115,13 +115,19 @@ const bodyEl = document.body;
 
 if (toggleTheme) {
     const toggleThemeInput = document.querySelector("#toggle-theme__input");
-    
-    toggleTheme.addEventListener('click', function() {
-        console.log('Click!!!');
+    console.log("bodyEl.classList: " + bodyEl.classList);
+
+    // Прослушка переключателя
+    toggleTheme.addEventListener('click', function () {
+        // console.log('Click!!!');
         if (toggleThemeInput.checked) {
             bodyEl.classList.add('green');
+            // Подсказка для смены темы
+            toggleTheme.setAttribute("title", "change to pink");
         } else {
             bodyEl.classList.remove("green");
+            // Подсказка для смены темы
+            toggleTheme.setAttribute("title", "change to green");
         }
     });
 }
